@@ -27,8 +27,16 @@ const Courses = () => {
   return (
     <>
     <img src={mainImg}></img>
+
+    <div className='absolute -mt-[14%] ml-[43%]'>
+    <p className='text-[2.2rem] text-white font-bold'>COURSES</p>
+    <button className='ml-4 px-2 py-1 text-white bg-[#4739FF]'>Home-Course</button>
+    </div>
+
+    
     <div className='flex justify-center'>
     <div className='grid grid-cols-4 gap-4 mt-10 w-[80%]'>
+
 
     {   data.map((value,index)=>{
         return(

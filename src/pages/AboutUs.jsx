@@ -8,6 +8,12 @@ const AboutUs = () => {
   return (
     <>
     <img src={mainImg}></img>
+
+    <div className='absolute -mt-[14%] ml-[43%]'>
+    <p className='text-[2.2rem] text-white font-bold'>ABOUT US</p>
+    <button className='ml-4 px-2 py-1 text-white bg-[#4739FF]'>Home-About Us</button>
+    </div>
+
     <div className='flex justify-center'>
     <div className='w-[80%] flex flex-col items-start justify-center'>
         <p className='text-[2rem] text-[#002B46] font-semibold mt-5'>About</p>

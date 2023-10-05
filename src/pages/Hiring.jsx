@@ -6,6 +6,11 @@ const Hiring = () => {
     <>
      <img src={hiringImg}></img>
 
+     <div className='absolute -mt-[18%] ml-[43%]'>
+    <p className='text-[2.2rem] text-white font-bold'>HIRING</p>
+    <button className='-ml-1 px-2 py-1 text-white bg-[#4739FF] rounded-md'>Home-Contact Us</button>
+    </div>
+
      <div className='flex'>
 
         <div className='w-[50%] bg-red-400 flex flex-col justify-center'>
