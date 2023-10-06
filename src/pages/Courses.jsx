@@ -35,34 +35,34 @@ const Courses = () => {
 
     
     <div className='flex justify-center'>
-    <div className='grid grid-cols-4 gap-4 mt-10 w-[80%]'>
+    <div className='grid grid-cols-4 sm:gap-4 gap-2 mt-10 sm:w-[80%] w-[90%]'>
 
 
     {   data.map((value,index)=>{
         return(
 
-    <div className=' mt-10 md:w-52 sm:w-32 md:h-72 sm:h-52 border-2 rounded-md border-slate-400 flex flex-col items-center' key={index}>
+    <div className=' mt-10 lg:w-52 md:w-44 sm:w-32 lg:h-72 md:h-64 sm:h-52 h-48 border-2 rounded-md border-slate-400 flex flex-col items-center' key={index}>
         <img src={value.courseImg} className='w-[95%] h-[40%] mt-1'></img>
-        <img src={ellipseImg} className='absolute md:w-[4%] sm:w-[3%] md:h-[7%] md:mt-24 sm:mt-[4.5rem] md:ml-32 sm:ml-20'></img>
+        <img src={ellipseImg} className='absolute md:w-[4%] sm:w-[3%] w-[3%] md:h-[7%] md:mt-24 sm:mt-[4.5rem] mt-[11%] md:ml-32 sm:ml-20 ml-[14%]'></img>
 
-        <div className='mt-3 md:mr-16 sm:mr-10 md:h-7 sm:h-5 md:w-32 sm:w-20 md:text-[1rem] sm:text-[0.6rem] bg-[#E8F9EF] text-[#4DBC53] rounded-full flex justify-center items-center'>Graphic Design</div>
-        <p className='mt-2 md:mr-7 sm:mr-4 w-[80%] md:text-xs sm:text-[0.5rem] font-semibold text-[#041841]'>Bigener Adobe Illustrator for Graphic Design</p>
+        <div className='sm:mt-3 mt-2 lg:mr-16 md:mr-20 sm:mr-10 mr-[40%] md:h-7 sm:h-5 h-3 lg:w-32 md:w-20 sm:w-20 w-16 lg:text-[1rem] md:text[0.95rem] sm:text-[0.6rem] text-[0.5rem] bg-[#E8F9EF] text-[#4DBC53] rounded-full flex justify-center items-center'>Graphic Design</div>
+        <p className='mt-2 md:mr-7 sm:mr-4 mr-[5%] w-[80%] md:text-xs sm:text-[0.5rem] text-[0.5rem] font-semibold text-[#041841]'>Bigener Adobe Illustrator for Graphic Design</p>
         
         <div className='flex justify-center'>
-        <div className='flex md:gap-[4.5rem] sm:gap-[2.5rem] md:w-[90%] sm:w-[90%] md:mt-5 sm:mt-3'>
+        <div className='flex lg:gap-[4.5rem] md:gap-[4rem] sm:gap-[2.5rem] gap-[40%] md:w-[90%] sm:w-[90%] w-[90%] md:mt-5 sm:mt-3 mt-2'>
         <img src={noteImg} className='w-[7%] h-[80%]'></img>
         <img src={clockImg} className='w-[7%] h-[90%]'></img>
         <img src={iconImg} className='w-[7%] h-[90%]'></img>
         </div>
         </div>
 
-        <p className='md:mt-3 sm:mt-2 md:w-48 sm:w-28 h-[0.01rem] bg-[#9F9F9F]'></p>
+        <p className='lg:mt-3 sm:mt-2 mt-2 lg:w-48 md:w-40 sm:w-28 w-[95%] h-[0.01rem] bg-[#9F9F9F]'></p>
 
-        <div className='md:mt-2 sm:mt-1 md:ml-2 sm:ml-1 flex md:gap-20 sm:gap-12 items-center'>
-            <p className='text-[#4739FF] md:text-[1rem] sm:text-xs font-semibold '>$29.00</p>
-            <div className='flex items-center'>
+        <div className='lg:mt-2 md:mt-1 sm:mt-1 mt-2 md:ml-2 sm:ml-1 ml-[2%] flex md:gap-20 sm:gap-12 gap-[40%] items-center'>
+            <p className='text-[#4739FF] lg:text-[1rem] md:text-[0.85rem] sm:text-xs text-[0.7rem] font-semibold '>$29.00</p>
+            <div className='flex items-center mr-[2%]'>
                 <img src={starImg} className='w-[25%] h-[20%]'></img>
-                <p className='text-[#6B6B6B] md:text-[1rem] sm:text-xs'>(4.2)</p>
+                <p className='text-[#6B6B6B] lg:text-[1rem] md:text-[0.85rem] sm:text-xs text-[0.7rem]'>(4.2)</p>
             </div>
         </div>
     </div>

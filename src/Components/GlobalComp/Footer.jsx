@@ -19,59 +19,59 @@ const Footer = () => {
     <>
      <img src={rectangleFooterImg} className={imgClassName}></img>
 
-   <div className='absloute -mt-52 flex lg:gap-24 md:gap-16 sm:gap-10'>
+   <div className='absloute -mt-52 flex lg:gap-24 md:gap-16 sm:gap-10 gap-4'>
     {/* footer part-1 */}
     <div className='ml-10'>
         <img src={hatImg} className='w-[15%]'></img>
-        <p className='text-white text-sm mt-5'>Spacetotech Technologies LLPC</p>
-        <p className='text-white text-sm'>C 171 sec-63 Noida Uttar</p>
-        <p className='text-white text-sm'>Pradesh-201301 India </p>
-        <div className='flex gap-5 mt-5'>
-            <div className='h-7 w-7 border rounded-full flex justify-center items-center'>
-            <img src={facebookImg} className='w-[20%] h-[0.8rem] '></img>
+        <p className='text-white sm:text-sm text-[0.5rem] sm:mt-5 mt-3'>Spacetotech Technologies LLPC</p>
+        <p className='text-white sm:text-sm text-[0.5rem]'>C 171 sec-63 Noida Uttar</p>
+        <p className='text-white sm:text-sm text-[0.5rem]'>Pradesh-201301 India </p>
+        <div className='flex gap-5 sm:mt-5 mt-3'>
+            <div className='sm:h-7 sm:w-7 h-4 w-4 border rounded-full flex justify-center items-center'>
+            <img src={facebookImg} className='sm:w-[20%] w-[15%] sm:h-[0.8rem] h-[0.5rem] '></img>
             </div>
-            <div className='h-7 w-7 border rounded-full flex justify-center items-center'>
-            <img src={instagramImg} className='w-[40%] h-[0.9rem]'></img>
+            <div className='sm:h-7 sm:w-7 h-4 w-4 border rounded-full flex justify-center items-center'>
+            <img src={instagramImg} className='sm:w-[40%] w-[30%] sm:h-[0.9rem] h-[0.5rem]'></img>
             </div>
-            <div className='h-7 w-7 border rounded-full flex justify-center items-center'>
-            <img src={twitterImg} className='w-[40%] h-[0.9rem]'></img>
+            <div className='sm:h-7 sm:w-7 h-4 w-4 border rounded-full flex justify-center items-center'>
+            <img src={twitterImg} className='sm:w-[40%] w-[30%] sm:h-[0.9rem] h-[0.5rem]'></img>
             </div>
         </div>
     </div>
 
     {/* footer part-2 */}
-    <div className='flex flex-col gap-4 md:ml-14 sm:ml-5'>
-        <p className='text-white sm:text-[1.25rem]'>Course</p>
-        <p className='text-white text-xs'>UI/UX Design</p>
-        <p className='text-white text-xs'>React JS</p>
-        <p className='text-white text-xs '>Core Java</p>
+    <div className='flex flex-col sm:gap-4 gap-2 md:ml-14 sm:ml-5 -ml-10'>
+        <p className='text-white sm:text-[1.25rem] text-[0.9rem]'>Course</p>
+        <p className='text-white sm:text-xs text-[0.5rem]'>UI/UX Design</p>
+        <p className='text-white sm:text-xs text-[0.5rem]'>React JS</p>
+        <p className='text-white sm:text-xs text-[0.5rem]'>Core Java</p>
     </div>
 
     {/* footer part-3 */}
-    <div className='flex flex-col gap-4'>
-        <p className='text-white sm:text-[1.25rem]'>About</p>
-        <p className='text-white text-xs'>About Us</p>
-        <p className='text-white text-xs'>Hiring</p>
-        <p className='text-white text-xs'>Privacy Policy</p>
+    <div className='flex flex-col sm:gap-4 gap-2'>
+        <p className='text-white sm:text-[1.25rem] text-[0.9rem]'>About</p>
+        <p className='text-white sm:text-xs text-[0.5rem]'>About Us</p>
+        <p className='text-white sm:text-xs text-[0.5rem]'>Hiring</p>
+        <p className='text-white sm:text-xs text-[0.5rem]'>Privacy Policy</p>
     </div>
 
     {/* footer part-4 */}
-    <div className='flex flex-col gap-4'>
-        <p className='text-white sm:text-[1.25rem]'>Help</p>
-        <p className='text-white text-xs'>Contact Us</p>
-        <p className='text-white text-xs'>FAQ</p>
+    <div className='flex flex-col sm:gap-4 gap-2'>
+        <p className='text-white sm:text-[1.25rem] text-[0.9rem]'>Help</p>
+        <p className='text-white sm:text-xs text-[0.5rem]'>Contact Us</p>
+        <p className='text-white sm:text-xs text-[0.5rem]'>FAQ</p>
     </div>
     
     {/* footer part-5 */}
     <div className='mt-5'>
-        <div className='flex gap-4'>
-        <img src={emailImg} className='w-[12%] h-[0.8rem]'></img>
-        <p className='text-white text-xs'>Spacetotech@gmail.com</p>
+        <div className='flex sm:gap-4 gap-2'>
+        <img src={emailImg} className='sm:w-[12%] w-[10%] sm:h-[0.8rem] h-[0.6rem]'></img>
+        <p className='text-white sm:text-xs text-[0.5rem]'>Spacetotech@gmail.com</p>
         </div>
 
-       <div className='flex gap-4 mt-2'>
-        <img src={phoneImg} className='w-[12%] h-[0.8rem]'></img>
-        <p className='text-white text-xs '>+91-8076190721</p>
+       <div className='flex sm:gap-4 gap-2 mt-2'>
+        <img src={phoneImg} className='sm:w-[12%] w-[10%] sm:h-[0.8rem] h-[0.6rem]'></img>
+        <p className='text-white sm:text-xs text-[0.5rem] '>+91-8076190721</p>
        </div>
     </div>
 
