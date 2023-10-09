@@ -17,8 +17,8 @@ const Path = () => {
             <Route path='/' element={<Home />}></Route>
             <Route path='/aboutUs' element={<AboutUs />}></Route>
             <Route path='/courses' element={<Courses />}></Route>
-            {/* <Route path= '/hiring' element={<Hiring/>}></Route>
-            <Route path= '/contactUs' element={<ContactUs/>}></Route> */}
+            <Route path= '/hiring' element={<Hiring/>}></Route>
+            <Route path= '/contactUs' element={<ContactUs/>}></Route>
         </Routes>
         <Footer />
     
