@@ -70,8 +70,8 @@ const Hiring = () => {
      <div className='flex bg-[#FEF2E9]'>
 
         <div className='w-[50%]  flex flex-col justify-center'>
-            <p className='ml-20 -mt-12 sm:text-[2rem] text-[1.5rem] font-semibold'>Get First Dibs.</p>
-            <p className='ml-20 mt-5 sm:text-base text-sm w-[80%]'>Copy Lorem ipsum is a placeholder text commonly used to demonstrate the visual form.</p>
+            <p className='ml-10 sm:ml-20 -mt-12 sm:text-[2rem] text-[1.5rem] font-semibold'>Get First Dibs.</p>
+            <p className='ml-10 sm:ml-20 sm:mt-5 mt-3 sm:text-base text-sm sm:w-[80%] w-[65%]'>Copy Lorem ipsum is a placeholder text commonly used to demonstrate the visual form.</p>
         </div>
 
         <div className='w-[50%]  flex flex-col'>

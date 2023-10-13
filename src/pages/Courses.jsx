@@ -28,9 +28,9 @@ const Courses = () => {
     <>
     <img src={mainImg}></img>
 
-    <div className='absolute -mt-[14%] ml-[43%]'>
-    <p className='text-[2.2rem] text-white font-bold'>COURSES</p>
-    <button className='ml-4 px-2 py-1 text-white bg-[#4739FF]'>Home-Course</button>
+    <div className='absolute sm:-mt-[14%] -mt-[16%] ml-[43%]'>
+    <p className='sm:text-[2.2rem] text-[1.5rem] text-white font-bold'>COURSES</p>
+    <button className='ml-[8%] px-2 py-1 sm:text-[1rem] text-[0.75rem] text-white bg-[#4739FF]'>Home-Course</button>
     </div>
 
     

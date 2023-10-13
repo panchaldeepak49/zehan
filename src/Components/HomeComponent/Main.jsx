@@ -16,7 +16,7 @@ const Main = () => {
         </div>
 
         <div className='w-[40%] flex justify-center'>
-            <img src={studentImg} className='lg:h-[100%] md:h-[90%] sm:h-[70%] h-[60%] mr-5'></img>
+            <img src={studentImg} alt='missing' className='lg:h-[100%] md:h-[90%] sm:h-[70%] h-[60%] mr-5'></img>
         </div>
     </div>
 

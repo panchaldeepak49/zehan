@@ -6,8 +6,12 @@ import instagramImg from '/Images/instagram.png'
 import twitterImg from '/Images/twitter.png'
 import emailImg from '/Images/email.png'
 import phoneImg from '/Images/phone.png'
+import { useNavigate } from 'react-router-dom'
+
 
 const Footer = () => {
+
+    const navigate = useNavigate();
 
     const imgClassName =
     window.location.pathname === '/'
@@ -52,7 +56,7 @@ const Footer = () => {
         <p className='text-white sm:text-[1.25rem] text-[0.9rem]'>About</p>
         <p className='text-white sm:text-xs text-[0.5rem]'>About Us</p>
         <p className='text-white sm:text-xs text-[0.5rem]'>Hiring</p>
-        <p className='text-white sm:text-xs text-[0.5rem]'>Privacy Policy</p>
+        <p className='text-white sm:text-xs text-[0.5rem] cursor-pointer' onClick={()=>navigate('/privacy')}>Privacy Policy</p>
     </div>
 
     {/* footer part-4 */}
