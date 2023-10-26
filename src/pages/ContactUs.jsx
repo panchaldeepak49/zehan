@@ -131,21 +131,21 @@ const sendMessage = async (e) => {
     <div className='mt-10 flex bg-[#FEF2E9] '>
 
         <div className='w-[50%] flex flex-col mt-14 '>
-            <div className='flex ml-[6rem] gap-[10rem]'>
+            <div className='flex ml-[4rem] sm:ml-[6rem] gap-[5rem] sm:gap-[10rem]'>
             {/* <img src={iconImg} className='absolute w-[1%] h-[2%] mr-[40%] mt-[1%]'></img> */}
             <div className='flex flex-col'>
-          <input type='text' placeholder='Full Name' className=' w-[150%] h-[2rem] rounded-md' value={fullName}
+          <input type='text' placeholder='Full Name' className='w-[130%] sm:w-[210%] md:w-[150%] h-[2rem] rounded-md' value={fullName}
           onChange={(e)=>setFullName(e.target.value)} onBlur={()=>setFullNameTouched(true)}></input>
           <span className='text-sm text-red-600'>{fullNameError}</span>
           </div>
           
           <div className='flex flex-col'>
-          <input type='text' placeholder='Email address' className=' w-[148%] h-[2rem] rounded-md' value={email}
+          <input type='text' placeholder='Email address' className='w-[100%] sm:w-[200%] md:w-[148%] h-[2rem] rounded-md' value={email}
           onChange={(e)=>setEmail(e.target.value)} onBlur={()=>setEmailTouched(true)}></input>
           <span className='text-sm text-red-600'>{emailError}</span>
           </div>
           </div>
-          <input type='text' placeholder='Subject' className='mt-4 ml-24 w-[40%] h-[2rem] rounded-md' value={subject}
+          <input type='text' placeholder='Subject' className='mt-4 ml-[4rem] sm:ml-24 w-[40%] h-[2rem] rounded-md' value={subject}
           onChange={(e)=>setSubject(e.target.value)} onBlur={()=>setSubjectTouched(true)}></input>
           <span className='text-sm ml-24 text-red-600'>{subjectError}</span>
 
@@ -157,7 +157,7 @@ const sendMessage = async (e) => {
           {/* Description as component used here  */}
 
 
-          <button className='lg:mt-10 sm:mt-8 mt-6 ml-24 bg-[#4739FF] py-2 w-[20%] md:text-[0.75rem] sm:text-[0.65rem] text-[0.5rem] text-white rounded-md'
+          <button className='lg:mt-10 sm:mt-8 mt-4 ml-[4rem] sm:ml-24 bg-[#4739FF] py-1 sm:py-2 w-[20%] md:text-[0.75rem] sm:text-[0.65rem] text-[0.5rem] text-white rounded-md'
           onClick={sendMessage}>Send Message</button>
         </div>
 

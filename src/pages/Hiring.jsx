@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import hiringImg from '/Images/hiring.png'
+import UploadFile from '../Components/UploadFile';
 
 const Hiring = () => {
 
@@ -78,7 +79,7 @@ const Hiring = () => {
             <label className='mt-5 sm:text-[1rem] text-[0.85rem]'>Your Name*</label>
             <input type='text' className='sm:w-[80%] w-[70%] h-[2rem] rounded-md' 
             onChange={(e)=>setName(e.target.value)} onBlur={()=>setNameTouched(true)}></input>
-            {/* <span className='text-sm text-red-600'>{nameError}</span> */}
+            <span className='text-sm text-red-600'>{nameError}</span>
 
             <label className='mt-5 sm:text-[1rem] text-[0.85rem]'>Your Email*</label>
             <input type='email' className='sm:w-[80%] w-[70%] h-[2rem] rounded-md'
@@ -89,9 +90,12 @@ const Hiring = () => {
             <input type='number' className='sm:w-[80%] w-[70%] h-[2rem] rounded-md'
             onChange={(e)=>setPhone(e.target.value)} onBlur={()=>setPhoneTouched(true)}></input>
             {/* <span className='text-sm text-red-600'>{phoneError}</span> */}
-
+              
+             
             <label className='mt-5 sm:text-[1rem] text-[0.85rem]'>Upload Resume* (PDF/Word)</label>
-            <button className='px-1 border-2 border-[#A1A1A1] rounded w-[15%] md:text-xs sm:text-[0.5rem] text-[0.4rem] text-[#595959] mt-2'>Choose File</button>
+            
+             <UploadFile />    {/* upload file as props used here */}
+            {/* <button className='px-1 border-2 border-[#A1A1A1] rounded w-[15%] md:text-xs sm:text-[0.5rem] text-[0.4rem] text-[#595959] mt-2'>Choose File</button> */}
             <button className='py-1.5  bg-[#4739FF] text-white mt-5 sm:w-[70%] w-[60%] rounded-md'>Submit</button>
         </div>
 

@@ -15,7 +15,7 @@ const Footer = () => {
 
     const imgClassName =
     window.location.pathname === '/'
-      ? 'mt-20 w-full h-[20rem]'
+      ? '-mt-20 w-full h-[20rem]'
       : 'mt-20 w-full h-[20rem]';
 
    // -mt-20

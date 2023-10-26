@@ -30,7 +30,7 @@ const Descriptionbox = ({description= '',setDescription,characterLimitExceeded,s
      <div>
       {/* <p className='font-[0.75rem] ml-[1.5rem]'>Video Description</p> */}
       <textarea
-      className='w-[90%] bg-[#ffffff] ml-[6.0rem] mt-[1rem] rounded-md'
+      className='w-[70%] sm:w-[90%] bg-[#ffffff] ml-[4rem] sm:ml-[6rem] mt-[1rem] rounded-md'
         value={initialDescription}
         onChange={handleChange}
         placeholder="Message"
@@ -40,7 +40,7 @@ const Descriptionbox = ({description= '',setDescription,characterLimitExceeded,s
 
       <div className='font-[0.75rem] ml-[2rem] -mt-[1rem]'>
         {/* <strong>Description:</strong> */}
-        <p className='text-[0.75rem] mt-[1rem] ml-[4rem]'>Character Count: {characterCount}/{maxCharacterCount}</p>
+        <p className='text-[0.55rem] sm:text-[0.75rem] mt-[1rem] ml-[2rem] sm:ml-[4rem]'>Character Count: {characterCount}/{maxCharacterCount}</p>
         {characterLimitExceeded && (
             <p className='font-[0.75rem] text-red-500 -mt-[0.5rem] ml-[4rem]'>250 characters limit!</p>
           )}
