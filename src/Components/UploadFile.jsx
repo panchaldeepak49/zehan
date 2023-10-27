@@ -3,17 +3,18 @@ import { message, Upload } from 'antd';
 
 const { Dragger } = Upload;
 
-const UploadFile = ({ thumbnailURL, setThumbnailURL }) => {
+const UploadFile = ({ resumeURL, setResumeURL }) => {
   const [isImageUploaded, setIsImageUploaded] = useState(false);
   const [fileList, setFileList] = useState([]);
+  //console.log(resumeURL) ;
 
   const props = {
     name: 'file',
     multiple: false,
-    action: 'https://admin.okomo360.com/api/utils/uploadFile', // It needs to be changed with a valid backend API
-    headers: {
-      Authorization: 'YourAuthorizationHeader', // Update this with your authorization header
-    },
+    action: 'http://localhost:5000/api/upload', // It needs to be changed with a valid backend API
+    // headers: {
+    //   Authorization: 'YourAuthorizationHeader', // Update this with your authorization header
+    // },
     fileList: fileList,
     accept: '.pdf,.doc,.docx', // Specify accepted file types (PDF and Word documents)
 
@@ -33,8 +34,9 @@ const UploadFile = ({ thumbnailURL, setThumbnailURL }) => {
       if (status === 'uploading') {
         setFileList([info.file]);
       }
+      //console.log(info.file);
       if (status === 'done') {
-        setThumbnailURL(info.file.response.url);
+        setResumeURL(info.file.response.url);
         setIsImageUploaded(true);
         message.success(`${info.file.name} file uploaded successfully.`);
         setFileList([]);
@@ -48,12 +50,13 @@ const UploadFile = ({ thumbnailURL, setThumbnailURL }) => {
     },
   };
 
+
   return (
     <div className='w-[100%] h-[2rem] flex justify-start items-center mt-[1rem]'>
-      <Dragger {...props} disabled={isImageUploaded} className='w-28 h-6  flex justify-center items-center'>
+      <Dragger {...props} disabled={isImageUploaded} className='w-[70%] md:w-[80%] h-[1.35rem]  flex justify-center items-center'>
               {/* <span className='w-full text-[0.85rem]'>Choose File</span> */}
-            <button className='px-1 border-2 border-[#A1A1A1] rounded w-[100%] md:text-xs sm:text-[0.5rem] 
-            text-[0.4rem] text-[#595959] absolute -mt-[1rem] -ml-[3.5rem]'>Choose File</button>
+            <button className=' md:px-1 border-2 border-[#A1A1A1] rounded w-[90%] md:w-[100%] md:text-xs sm:text-[0.5rem] 
+            text-[0.4rem] text-[#595959] absolute -mt-[0.95rem] -ml-[2rem] md:-ml-[4rem] '>Choose File</button>
         
       </Dragger>
     </div>

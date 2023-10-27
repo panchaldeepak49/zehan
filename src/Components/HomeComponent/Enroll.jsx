@@ -111,18 +111,6 @@ const Enroll = () => {
       } 
     }
 
-    if(emailTouched){
-      if(!email.trim()){
-        setEmailError('Please enter your email ');
-      }
-      else if(!emailRegex.test(email)){
-        setEmailError('Enter correct email address ');
-      }
-      else {
-        setEmailError('');
-      } 
-    }
-
     if(phoneTouched){
       if(!phone.trim()){
         setPhoneError('Please enter your contact number');
