@@ -18,8 +18,9 @@ const TopCategories = () => {
     <>
     <div className='flex flex-col items-center mt-10'>
         <p className='md:text-[4rem] sm:text-[3rem] text-[#525FE1] font-semibold '>Top Categories</p>
-        <p className='mt-5 md:w-[50%] sm:w-[55%] text-center md:text-[1rem] sm:text-[0.75rem] text-[0.75rem] text-[#4A4A4A]'>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a
-            typeface without relying on meaningful content.</p>
+        <p className='mt-5 md:w-[50%] sm:w-[55%] text-center md:text-[1rem] sm:text-[0.75rem] text-[0.75rem] text-[#4A4A4A]'>
+        Look out for Indian staples like salwar suits, sarees, kurtas, and lehengas or experiment with a range of fusion separates.
+        Indigenous craftsmanship and age-old techniques of embroidery.</p>
     </div>
     
     <div className='flex justify-center'>
@@ -30,12 +31,12 @@ const TopCategories = () => {
          </div>
 
          <div className='flex flex-col sm:gap-6 gap-2 h-[20rem]'>
-         <img src={model4} className='h-full rounded-md' ></img>
+         <img src={model3} className='h-full rounded-md' ></img>
          </div>
 
         
          <div className='flex flex-col sm:gap-6 gap-2 h-[20rem]'>
-         <img src={model3}  className='h-full rounded-md'></img>
+         <img src={model4}  className='h-full rounded-md'></img>
          </div>
          
          <div className='flex flex-col sm:gap-6 gap-2 h-[20rem]'>

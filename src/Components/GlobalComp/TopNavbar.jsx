@@ -16,7 +16,8 @@ const TopNavbar = () => {
   return (
     <>
     <div className='w-full h-20 bg-gradient-to-r from-red-100 via-red-200 via-blue-200 to-red-200 flex justify-between items-center '>
-        <img src={iconImg} className='md:h-20 sm:h-16 h-12 sm:ml-20 ml-5'></img>
+        {/* <img src={iconImg} className='md:h-20 sm:h-16 h-12 sm:ml-20 ml-5'></img> */}
+         <p className='font-bold text-[1.75rem] text-[#002B46] ml-10'>ZEHAN</p>
 
         <span className='text-3xl max-[400px]:text-xl sm:hidden block cursor-pointer mr-5' onClick={toggleMenu}>
         {isMenuOpen ? <RxCross2 /> : <AiOutlineMenu />}
@@ -29,11 +30,11 @@ const TopNavbar = () => {
         rounded-md sm:w-auto sm:text-[1rem] text-[0.85rem] max-[500px]:text-[0.65rem]
                    ml-[82%] sm:ml-0 mt-60 sm:mt-0  sm:opacity-100 ${isMenuOpen ? 'opacity-100' : 'opacity-0'} transition-all ease-in duration-300`}>
 
-            <p className='mt-4 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' onClick={()=>navigate('/')}>Home</p>
-            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >About Us</p>
-            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >Courses</p>
-            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >Hiring</p>
-            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >Contact Us</p>
+            <p className='mt-4 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' onClick={()=>navigate('/')}>MEN</p>
+            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >WOMEN</p>
+            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >WEDDING</p>
+            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >JEWELLERY</p>
+            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >ACCESSORIES</p>
         </div>
     </div>
     </>

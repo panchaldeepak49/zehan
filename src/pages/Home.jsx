@@ -1,5 +1,4 @@
 import React from 'react'
-import TopNavbar from '../Components/GlobalComp/TopNavbar'
 import Main from '../Components/HomeComponent/Main'
 import TopCategories from '../Components/HomeComponent/TopCategories'
 import About from '../Components/HomeComponent/About'
@@ -10,11 +9,10 @@ const Home = () => {
   
   return (
     <>
-    {/* <TopNavbar /> */}
     <Main />
     <TopCategories />
     <About />
-    <OurTrainers />
+    {/* <OurTrainers /> */}
     <Enroll/>
     
     </>

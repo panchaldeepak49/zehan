@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import enrollImg from '/Images/enroll.png'
 import rectangleEnrollHeadImg from '/Images/Rectangle 25.png'
+import model8 from '/Images/model8.webp'
 import { userRequest } from '../RequestMethod'
 import { message } from 'antd'
 
@@ -128,7 +129,7 @@ const Enroll = () => {
   return (
     <>
     <div className='mt-14 w-[90%] flex justify-evenly'>
-        <img src={enrollImg} className='w-[40%]'></img>
+        <img src={model8} className='w-[40%]'></img>
 
         {/* <div className='w-[50%] flex flex-col justify-end mt-20 '>
             <img src={rectangleEnrollImg} className='w-[50%] h-[22rem]'></img>
@@ -139,7 +140,7 @@ const Enroll = () => {
             items-center'>
                 
             <img src={rectangleEnrollHeadImg} className=' w-[100%] '></img>
-                <p className='absolute md:mt-4 sm:mt-1 sm:text-[1rem] text-[0.75rem] text-white'>Enroll Now</p>
+                <p className='absolute md:mt-4 sm:mt-1 sm:text-[1rem] text-[0.75rem] text-white'>Need Help</p>
                 <input type='text' className=' w-[80%] h-[2rem] mt-4 rounded-md shadow-md' placeholder='Your Name'
                 value={name} onChange={(e)=>setName(e.target.value)} onBlur={()=>setNameTouched(true)}></input>
                 <span className='text-red-500 text-[0.75rem] mr-16' >{nameError}</span>
