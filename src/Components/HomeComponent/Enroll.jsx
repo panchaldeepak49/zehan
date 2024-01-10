@@ -129,7 +129,7 @@ const Enroll = () => {
   return (
     <>
     <div className='mt-14 w-[90%] flex justify-evenly'>
-        <img src={model8} className='w-[40%]'></img>
+        <img src={model8} className='w-[40%] rounded-md'></img>
 
         {/* <div className='w-[50%] flex flex-col justify-end mt-20 '>
             <img src={rectangleEnrollImg} className='w-[50%] h-[22rem]'></img>

@@ -26,7 +26,7 @@ const About = () => {
         <div>
         <p className='text-[#525FE1] sm:text-[1rem] text-[0.9rem] font-semibold'>Latest Fashion Trends</p>
         <p className='text-[#7A7A7A] w-[80%] md:text-[1rem] sm:text-xs text-xs'>Your quest for best dresses
-           ends at Zehan collections.At Nykaa Fashion Luxe, you will find a galore of options across apparel, jewellery, accessories, and lingerie.</p>
+           ends at Zehan collections.At Zehan Fashion Luxe, you will find a galore of options across apparel, jewellery, accessories, and lingerie.</p>
            </div>
         </div>
         
