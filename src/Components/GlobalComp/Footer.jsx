@@ -23,8 +23,8 @@ const Footer = () => {
     <>
      <img src={rectangleFooterImg} className={imgClassName}></img>
 
-   <div className='absloute -mt-52 flex lg:gap-24 md:gap-16 sm:gap-10 gap-4'>
-    {/* footer part-1 */}
+   {/* <div className='absloute -mt-52 flex lg:gap-24 md:gap-16 sm:gap-10 gap-4'>
+    footer part-1
     <div className='ml-10'>
         <img src={hatImg} className='w-[15%]'></img>
         <p className='text-white sm:text-sm text-[0.5rem] sm:mt-5 mt-3'>Spacetotech Technologies LLPC</p>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
     </div>
 
-    {/* footer part-2 */}
+    footer part-2
     <div className='flex flex-col sm:gap-4 gap-2 md:ml-14 sm:ml-5 -ml-10'>
         <p className='text-white sm:text-[1.25rem] text-[0.9rem]'>Course</p>
         <p className='text-white sm:text-xs text-[0.5rem]'>UI/UX Design</p>
@@ -51,7 +51,7 @@ const Footer = () => {
         <p className='text-white sm:text-xs text-[0.5rem]'>Core Java</p>
     </div>
 
-    {/* footer part-3 */}
+    footer part-3
     <div className='flex flex-col sm:gap-4 gap-2'>
         <p className='text-white sm:text-[1.25rem] text-[0.9rem]'>About</p>
         <p className='text-white sm:text-xs text-[0.5rem]'>About Us</p>
@@ -59,14 +59,14 @@ const Footer = () => {
         <p className='text-white sm:text-xs text-[0.5rem] cursor-pointer' onClick={()=>navigate('/privacy')}>Privacy Policy</p>
     </div>
 
-    {/* footer part-4 */}
+    footer part-4
     <div className='flex flex-col sm:gap-4 gap-2'>
         <p className='text-white sm:text-[1.25rem] text-[0.9rem]'>Help</p>
         <p className='text-white sm:text-xs text-[0.5rem]'>Contact Us</p>
         <p className='text-white sm:text-xs text-[0.5rem]'>FAQ</p>
     </div>
     
-    {/* footer part-5 */}
+    footer part-5
     <div className='mt-5'>
         <div className='flex sm:gap-4 gap-2'>
         <img src={emailImg} className='sm:w-[12%] w-[10%] sm:h-[0.8rem] h-[0.6rem]'></img>
@@ -79,7 +79,7 @@ const Footer = () => {
        </div>
     </div>
 
-    </div>
+    </div> */}
     </>
   )
 }

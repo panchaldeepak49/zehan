@@ -30,10 +30,10 @@ const TopNavbar = () => {
                    ml-[82%] sm:ml-0 mt-60 sm:mt-0  sm:opacity-100 ${isMenuOpen ? 'opacity-100' : 'opacity-0'} transition-all ease-in duration-300`}>
 
             <p className='mt-4 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' onClick={()=>navigate('/')}>Home</p>
-            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' onClick={()=>navigate('/aboutUs')}>About Us</p>
-            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' onClick={()=>navigate('/courses')}>Courses</p>
-            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' onClick={()=>navigate('/hiring')}>Hiring</p>
-            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' onClick={()=>navigate('/contactUs')}>Contact Us</p>
+            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >About Us</p>
+            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >Courses</p>
+            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >Hiring</p>
+            <p className='mt-2 ml-[15%] sm:ml-0 sm:mt-0 cursor-pointer' >Contact Us</p>
         </div>
     </div>
     </>

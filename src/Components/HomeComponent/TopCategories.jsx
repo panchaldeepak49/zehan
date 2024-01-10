@@ -1,4 +1,10 @@
 import React from 'react'
+import model1 from '/Images/model1.jpeg'
+import model2 from '/Images/model2.jpeg'
+import model3 from '/Images/model3.jpeg'
+import model4 from '/Images/model4.jpeg'
+import model5 from '/Images/model5.jpeg'
+import model6 from '/Images/model6.jpeg'
 import rect8Img from '/Images/Rectangle 8.png'
 import rect9Img from '/Images/Rectangle 9.png'
 import rect14Img from '/Images/Rectangle 14.png'
@@ -19,18 +25,21 @@ const TopCategories = () => {
     <div className='flex justify-center'>
     <div className='grid grid-cols-4 sm:gap-4 gap-2 mt-10 w-[80%]'>
        
-       <div className='flex flex-col sm:gap-6 gap-2'>
-         <img src={rect8Img} ></img>
-         <img src={rect10Img} ></img>
+       <div className='flex flex-col sm:gap-6 gap-2 h-[20rem]'>
+         <img src={model1} className='h-full rounded-md'></img>
          </div>
-         <div className='flex flex-col sm:gap-6 gap-2'>
-         <img src={rect9Img} ></img>
-         <img src={rect11Img} ></img>
+
+         <div className='flex flex-col sm:gap-6 gap-2 h-[20rem]'>
+         <img src={model4} className='h-full rounded-md' ></img>
          </div>
-         <img src={rect14Img} className='h-[100%]'></img>
-         <div className='flex flex-col sm:gap-6 gap-2'>
-         <img src={rect12Img} ></img>
-         <img src={rect13Img} ></img>
+
+        
+         <div className='flex flex-col sm:gap-6 gap-2 h-[20rem]'>
+         <img src={model3}  className='h-full rounded-md'></img>
+         </div>
+         
+         <div className='flex flex-col sm:gap-6 gap-2 h-[20rem]'>
+         <img src={model5} className='h-full rounded-md'></img>
          </div>
     </div>
     </div>
